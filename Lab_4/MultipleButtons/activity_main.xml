@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Wrap everything in a ScrollView -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Button for Android 1.5 Cupcake -->
+            <Button
+                android:id="@+id/button_cupcake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cupcake (1.5)"
+                app:layout_constraintBottom_toTopOf="@+id/button_donut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Button for Android 1.6 Donut -->
+            <Button
+                android:id="@+id/button_donut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donut (1.6)"
+                app:layout_constraintBottom_toTopOf="@+id/button_eclair"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_cupcake" />
+
+            <!-- Button for Android 2.0 Eclair -->
+            <Button
+                android:id="@+id/button_eclair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eclair (2.0)"
+                app:layout_constraintBottom_toTopOf="@+id/button_froYo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_donut" />
+
+            <!-- Button for Android 2.2 FroYo -->
+            <Button
+                android:id="@+id/button_froYo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FroYo (2.2)"
+                app:layout_constraintBottom_toTopOf="@+id/button_gingerbread"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_eclair" />
+
+            <!-- Button for Android 2.3 Gingerbread -->
+            <Button
+                android:id="@+id/button_gingerbread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gingerbread (2.3)"
+                app:layout_constraintBottom_toTopOf="@+id/button_honeycomb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_froYo" />
+
+            <!-- Button for Android 3.0 Honeycomb -->
+            <Button
+                android:id="@+id/button_honeycomb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Honeycomb (3.0)"
+                app:layout_constraintBottom_toTopOf="@+id/button_ics"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_gingerbread" />
+
+            <!-- Button for Android 4.0 Ice Cream Sandwich -->
+            <Button
+                android:id="@+id/button_ics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ice Cream Sandwich (4.0)"
+                app:layout_constraintBottom_toTopOf="@+id/button_jellybean"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_honeycomb" />
+
+            <!-- Button for Android 4.1 Jellybean -->
+            <Button
+                android:id="@+id/button_jellybean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jellybean (4.1)"
+                app:layout_constraintBottom_toTopOf="@+id/button_kitkat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_ics" />
+
+            <!-- Button for Android 4.4 KitKat -->
+            <Button
+                android:id="@+id/button_kitkat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KitKat (4.4)"
+                app:layout_constraintBottom_toTopOf="@+id/button_lollipop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_jellybean" />
+
+            <!-- Button for Android 5.0 Lollipop -->
+            <Button
+                android:id="@+id/button_lollipop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lollipop (5.0)"
+                app:layout_constraintBottom_toTopOf="@+id/button_marshmallow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_kitkat" />
+
+            <!-- Button for Android 6.0 Marshmallow -->
+            <Button
+                android:id="@+id/button_marshmallow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marshmallow (6.0)"
+                app:layout_constraintBottom_toTopOf="@+id/button_nougat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_lollipop" />
+
+            <!-- Button for Android 7.0 Nougat -->
+            <Button
+                android:id="@+id/button_nougat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nougat (7.0)"
+                app:layout_constraintBottom_toTopOf="@+id/button_oreo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_marshmallow" />
+
+            <!-- Button for Android 8.0 Oreo -->
+            <Button
+                android:id="@+id/button_oreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oreo (8.0)"
+                app:layout_constraintBottom_toTopOf="@+id/button_pie"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_nougat" />
+
+            <!-- Button for Android 9.0 Pie -->
+            <Button
+                android:id="@+id/button_pie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pie (9.0)"
+                app:layout_constraintBottom_toTopOf="@+id/button_android10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_oreo" />
+
+            <!-- Button for Android 10 -->
+            <Button
+                android:id="@+id/button_android10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android 10"
+                app:layout_constraintBottom_toTopOf="@+id/button_android11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_pie" />
+
+            <!-- Button for Android 11 -->
+            <Button
+                android:id="@+id/button_android11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android 11"
+                app:layout_constraintBottom_toTopOf="@+id/button_android12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_android10" />
+
+            <!-- Button for Android 12 -->
+            <Button
+                android:id="@+id/button_android12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android 12"
+                app:layout_constraintBottom_toTopOf="@+id/button_android13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_android11" />
+
+            <!-- Button for Android 13 -->
+            <Button
+                android:id="@+id/button_android13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android 13"
+                app:layout_constraintBottom_toTopOf="@+id/button_android14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_android12" />
+
+            <!-- Button for Android 14 -->
+            <Button
+                android:id="@+id/button_android14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android 14"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_android13" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

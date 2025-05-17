@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Details"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Movie -->
+    <TextView
+        android:id="@+id/tvMovie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Movie: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Theatre -->
+    <TextView
+        android:id="@+id/tvTheatre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Theatre: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvMovie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTheatre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Time: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Ticket Type -->
+    <TextView
+        android:id="@+id/tvTicketType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ticket Type: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Available Seats -->
+    <TextView
+        android:id="@+id/tvSeats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Available Seats: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTicketType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

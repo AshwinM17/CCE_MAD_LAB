@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Textual Option Items -->
+    <item
+        android:id="@+id/action_workout"
+        android:title="Workout Plans" />
+    <item
+        android:id="@+id/action_trainers"
+        android:title="Trainers" />
+    <item
+        android:id="@+id/action_membership"
+        android:title="Membership" />
+
+    <!-- Icon Option Items (displayed as action items if there is room) -->
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home"
+        android:title="Homepage"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_contact"
+        android:icon="@drawable/ic_contact"
+        android:title="Contact US"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_about"
+        android:icon="@drawable/ic_about"
+        android:title="About Us"
+        android:showAsAction="ifRoom" />
+</menu>

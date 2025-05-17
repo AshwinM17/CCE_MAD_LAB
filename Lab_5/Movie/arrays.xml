@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movies">
+        <item>Inception</item>
+        <item>The Dark Knight</item>
+        <item>Interstellar</item>
+    </string-array>
+    <string-array name="theatres">
+        <item>Theatre 1</item>
+        <item>Theatre 2</item>
+        <item>Theatre 3</item>
+    </string-array>
+</resources>
